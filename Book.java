@@ -3,8 +3,8 @@
  * This might form part of a larger application such
  * as a library system, for instance.
  *
- * @author (Insert your name here.)
- * @version (Insert today's date here.)
+ * @author (IGiovanny Ospina)
+ * @version (9/24/2017)
  */
 class Book
 {
@@ -14,7 +14,7 @@ class Book
     private int pages;
 
     /**
-     * Set the author and title and pages fields when this object
+     * Set the author, title and pages fields when this object
      * is constructed.
      */
     public Book(String bookAuthor, String bookTitle, int numOfPages)
@@ -23,7 +23,6 @@ class Book
         title = bookTitle;
         pages = numOfPages;
     }
-    
     
     /**
      * Return the name of the Author
@@ -63,6 +62,17 @@ class Book
     public int getPages()
     {
         return pages;
+    }
+    
+    /**
+     * Print the details of the author, title, and amount 
+     * of pages of the book to the output terminal
+     */
+    public void printDetails()
+    {
+        System.out.println("Title of the book: " + title);
+        System.out.println("Author: " + title);
+        System.out.println("Pages: " + title);
     }
     
     // Add the methods here ...
