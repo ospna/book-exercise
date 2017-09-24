@@ -23,6 +23,7 @@ class Book
         author = bookAuthor;
         title = bookTitle;
         pages = numOfPages;
+        refNumber = ("");
     }
     
     /**
@@ -76,5 +77,19 @@ class Book
         System.out.println("Pages: " + pages + ", ");
     }
     
-    // Add the methods here ...
+    /**
+     * Sets a reference number for the book
+     */
+    public void setRefNumber(String ref)
+    {
+        refNumber = ref;
+    }
+
+    /**
+     * Gets the reference number for the book
+     */
+    public String getRefNumber()
+    {
+        return refNumber;
+    }// Add the methods here ...
 }
