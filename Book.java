@@ -26,7 +26,7 @@ class Book
         title = bookTitle;
         pages = numOfPages;
         refNumber = "";
-        courseText = true;
+        this.courseText = courseText;
     }
     
     /**
@@ -124,8 +124,8 @@ class Book
      */
     public void printDetails()
     {
-        System.out.println("Title of the book: " + title + ", ");
-        System.out.println("Author: " + author + ", ");
+        System.out.println("Title of the book: " + title);
+        System.out.println("Author: " + author);
         System.out.println("Pages: " + pages);
         
         String refNumberString;
