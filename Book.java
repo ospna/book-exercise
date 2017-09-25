@@ -3,17 +3,18 @@
  * This might form part of a larger application such
  * as a library system, for instance.
  *
- * @author (IGiovanny Ospina)
+ * @author (Giovanny Ospina)
  * @version (9/24/2017)
  */
+
 class Book
 {
-    // The fields.
     private String author;
     private String title;
     private int pages;
     private String refNumber;
     private int borrowed;
+    private boolean courseText;
 
     /**
      * Set the author, title and pages fields when this object
@@ -24,7 +25,7 @@ class Book
         author = bookAuthor;
         title = bookTitle;
         pages = numOfPages;
-        refNumber = ("");
+        refNumber = "";
     }
     
     /**
@@ -68,33 +69,7 @@ class Book
     }
     
     /**
-     * Print the details of the author, title, and amount 
-     * of pages of the book to the output terminal
-     */
-    public void printDetails()
-    {
-        System.out.println("Title of the book: " + title + ", ");
-        System.out.println("Author: " + author + ", ");
-        System.out.println("Pages: " + pages + ", ");
-        
-        String refNumberString;
-        
-        if(refNumber.length() > 0)
-        {
-            refNumberString = refNumber;
-        }
-        else
-        {
-            refNumberString = "ZZZ";
-        }
-        
-        System.out.println("Reference number: " + refNumberString);
-        System.out.println("The book has been borrowed " + borrowed + " times.");
-        
-    }
-    
-    /**
-     * Sets a reference number for the book
+     * Sets the reference number for the book
      */
     public void setRefNumber(String ref)
     {
@@ -131,5 +106,38 @@ class Book
     {
         return borrowed;
     }
-    // Add the methods here ...
+    
+    /**
+     * Determines whether or not the book is being used as 
+     * a text book on a course
+     */
+    
+    public void isCourseText()
+    {
+        courseText = true;
+    }
+    
+    /**
+     * Print the details of the author, title, and amount 
+     * of pages of the book to the output terminal
+     */
+    public void printDetails()
+    {
+        System.out.println("Title of the book: " + title + ", ");
+        System.out.println("Author: " + author + ", ");
+        System.out.println("Pages: " + pages);
+        
+        String refNumberString;
+        if(refNumber.length() > 0)
+        {
+            refNumberString = refNumber;
+        }
+        else
+        {
+            refNumberString = "ZZZ";
+        }
+        
+        System.out.println("Reference number: " + refNumberString);
+        System.out.println("The book has been borrowed " + borrowed + " times.");
+    }    
 }
