@@ -20,12 +20,13 @@ class Book
      * Set the author, title and pages fields when this object
      * is constructed.
      */
-    public Book(String bookAuthor, String bookTitle, int numOfPages)
+    public Book(String bookAuthor, String bookTitle, int numOfPages, boolean courseText)
     {
         author = bookAuthor;
         title = bookTitle;
         pages = numOfPages;
         refNumber = "";
+        courseText = true;
     }
     
     /**
@@ -112,9 +113,9 @@ class Book
      * a text book on a course
      */
     
-    public void isCourseText()
+    public boolean isCourseText()
     {
-        courseText = true;
+        return courseText;
     }
     
     /**
@@ -139,5 +140,6 @@ class Book
         
         System.out.println("Reference number: " + refNumberString);
         System.out.println("The book has been borrowed " + borrowed + " times.");
-    }    
+    } 
+    
 }

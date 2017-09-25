@@ -1,14 +1,14 @@
 #BlueJ class context
 comment0.target=Book
 comment0.text=\r\n\ A\ class\ that\ maintains\ information\ on\ a\ book.\r\n\ This\ might\ form\ part\ of\ a\ larger\ application\ such\r\n\ as\ a\ library\ system,\ for\ instance.\r\n\r\n\ @author\ (Giovanny\ Ospina)\r\n\ @version\ (9/24/2017)\r\n
-comment1.params=bookAuthor\ bookTitle\ numOfPages
-comment1.target=Book(java.lang.String,\ java.lang.String,\ int)
+comment1.params=bookAuthor\ bookTitle\ numOfPages\ courseText
+comment1.target=Book(java.lang.String,\ java.lang.String,\ int,\ boolean)
 comment1.text=\r\n\ Set\ the\ author,\ title\ and\ pages\ fields\ when\ this\ object\r\n\ is\ constructed.\r\n
 comment10.params=
 comment10.target=int\ getBorrowed()
 comment10.text=\r\n\ Gets\ the\ number\ of\ times\ the\ book\ has\ been\ borrowed\r\n
 comment11.params=
-comment11.target=void\ isCourseText()
+comment11.target=boolean\ isCourseText()
 comment11.text=\r\n\ Determines\ whether\ or\ not\ the\ book\ is\ being\ used\ as\ \r\n\ a\ text\ book\ on\ a\ course\r\n
 comment12.params=
 comment12.target=void\ printDetails()
